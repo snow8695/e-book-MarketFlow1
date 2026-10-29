@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#08060d">
+  <title>MarketFlow | Marketing Digital</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="#" class="logo">Market<span>Flow</span></a>
+    <span class="tag">ÁREA EXCLUSIVA</span>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="access-card">
+        <div class="lock">🔒</div>
+
+        <p class="eyebrow">SEU PRÓXIMO NÍVEL COMEÇA AQUI</p>
+
+        <h1>Bem-vindo ao<br>
+          <span>MarketFlow.</span>
+        </h1>
+
+        <p class="description">
+          Aprenda a evitar erros comuns, desenvolver
+          estratégias e evoluir no marketing digital.
+          Seu próximo passo começa agora.
+        </p>
+
+        <button class="access-button" id="openModal">
+          🔒 ACESSAR E-BOOK
+        </button>
+
+        <p class="note">Conteúdo exclusivo para alunos</p>
+      </div>
+    </section>
+
+    <section class="ebook" id="ebook">
+      <div class="ebook-header">
+        <p class="eyebrow">ACESSO LIBERADO</p>
+        <h2>Seu material <span>MarketFlow</span></h2>
+        <p>Role para baixo para visualizar todas as páginas.</p>
+      </div>
+
+      <div class="pages">
+        <!-- Coloque as páginas do seu PDF nesta pasta -->
+        <img src="imagens/pagina-1.jpg" alt="Página 1 do e-book">
+        <img src="imagens/pagina-2.jpg" alt="Página 2 do e-book">
+        <img src="imagens/pagina-3.jpg" alt="Página 3 do e-book">
+        <img src="imagens/pagina-4.jpg" alt="Página 4 do e-book">
+      </div>
+
+      <button class="back-button" id="backButton">
+        ← Voltar ao início
+      </button>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 MarketFlow — Marketing Digital
+  </footer>
+
+  <div class="modal" id="passwordModal">
+    <div class="modal-card">
+      <button class="close" id="closeModal" aria-label="Fechar">×</button>
+
+      <div class="lock">🔐</div>
+      <h2>Acesso <span>restrito</span></h2>
+      <p>Digite sua senha para liberar o material.</p>
+
+      <form id="passwordForm">
+        <label for="password">Senha de acesso</label>
+
+        <input
+          type="password"
+          id="password"
+          placeholder="Digite sua senha"
+          autocomplete="current-password"
+          required
+        >
+
+        <p id="error" class="error" aria-live="polite"></p>
+
+        <button type="submit" class="access-button">
+          DESBLOQUEAR E-BOOK
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
